@@ -1,0 +1,25 @@
+{
+  "name": "slocjs",
+  "version": "1.0.0",
+  "description": "Simple tool to count SLOC (source lines of code)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "sloc",
+    "lines of code",
+    "repo analytics"
+  ],
+  "author": "Andrew Njoo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adnjoo/slocjs"
+  },
+  "bugs": {
+    "url": "https://github.com/adnjoo/slocjs/issues"
+  },
+  "homepage": "https://github.com/adnjoo/slocjs"
+}
