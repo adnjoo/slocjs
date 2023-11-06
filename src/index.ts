@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const exclude = ['node_modules', '.next', '.git', '.vscode', '.vercel'];
+const exclude = ['node_modules', '.next', '.git', '.vscode', '.vercel']; // TODO: https://github.com/adnjoo/slocjs/issues/4
 
 const countLinesOfCode = (path, extensions) => {
   try {
@@ -29,11 +29,11 @@ const countLinesOfCode = (path, extensions) => {
   }
 };
 
-const srcPath = '../client/src/';
-const extensionsToCount = ['.ts', '.tsx', '.js'];
+const srcPath = '../src/'; // TODO: https://github.com/adnjoo/slocjs/issues/2
+const extensionsToCount = ['.ts', '.tsx', '.js']; // TODO: https://github.com/adnjoo/slocjs/issues/5
 const linesOfCode = countLinesOfCode(srcPath, extensionsToCount);
 
-const readmeFile = '../README.md';
+const readmeFile = '../README.md'; // TODO: https://github.com/adnjoo/slocjs/issues/6
 fs.readFile(readmeFile, 'utf-8', function (err, data) {
   if (err) {
     return console.log(err);
