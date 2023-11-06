@@ -1,1 +1,3 @@
 # slocjs
+
+SLOC: 56
