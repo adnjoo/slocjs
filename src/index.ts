@@ -1,4 +1,3 @@
-import fs from 'fs';
 import path from 'path';
 
 import { EXTENSIONS } from "./types";
@@ -6,15 +5,18 @@ import { countLinesOfCode } from './functions';
 
 const exclude = ['node_modules', '.next', '.git', '.vscode', '.vercel']; // TODO: https://github.com/adnjoo/slocjs/issues/4
 const rootPath = process.cwd();
-// const srcPath = '../src/'; // TODO: https://github.com/adnjoo/slocjs/issues/2
-const srcPath = path.join(rootPath, 'src');
+const srcPath = path.join(rootPath, 'src'); // TODO: https://github.com/adnjoo/slocjs/issues/2
 const extensionsToCount = [EXTENSIONS.JS, EXTENSIONS.TS, EXTENSIONS.TSX]; // TODO: https://github.com/adnjoo/slocjs/issues/5
 const linesOfCode = countLinesOfCode(srcPath, extensionsToCount);
 
-// console.log(`SLOC: ${linesOfCode}`);
-
+// 
+/**
+ * Returns number of lines of code in a directory
+ * @param dirPath 
+ * @returns string
+ */
 export function countLinesInDir(dirPath: string): string {
-  const extensionsToCount = [EXTENSIONS.JS, EXTENSIONS.TS, EXTENSIONS.TSX];
+  const extensionsToCount = [EXTENSIONS.JS, EXTENSIONS.TS, EXTENSIONS.TSX]; // TODO: https://github.com/adnjoo/slocjs/issues/5
   const linesOfCode = countLinesOfCode(dirPath, extensionsToCount);
   return `SLOC: ${linesOfCode}`;
 }
