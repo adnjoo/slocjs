@@ -9,7 +9,6 @@ const srcPath = path.join(rootPath, "src"); // TODO: https://github.com/adnjoo/s
 const extensionsToCount = [EXTENSIONS.JS, EXTENSIONS.TS, EXTENSIONS.TSX]; // TODO: https://github.com/adnjoo/slocjs/issues/5
 const linesOfCode = countLinesOfCode(srcPath, extensionsToCount);
 
-//
 /**
  * Returns number of lines of code in a directory
  * @param dirPath
@@ -41,6 +40,6 @@ export function countLinesInDir(dirPath: string): string {
 //   });
 // });
 
-export default {
+module.exports = {
   countLinesInDir,
 };

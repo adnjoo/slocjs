@@ -1,6 +1,6 @@
 {
   "name": "slocjs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Simple tool to count SLOC (source lines of code)",
   "main": "dist/index.js",
   "type": "module",
