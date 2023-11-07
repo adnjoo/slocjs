@@ -2,13 +2,13 @@
 
 SLOC: 56
 
-Quickstart:
+## Quickstart:
 
 ```
 npm install slocjs
 ```
 
-Make a file like lines.js
+Make a file like `lines.js`
 ```
 const slocjs = require('slocjs')
 
@@ -17,8 +17,10 @@ console.log(lines)
 ```
 
 ```
-guy@guy-MacBook-Pro repo % node liness.js
+guy@guy-MacBook-Pro repo % node lines.js
 SLOC: 3415
 ```
+
+## Npmjs
 
 https://www.npmjs.com/package/slocjs
