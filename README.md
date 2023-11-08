@@ -1,6 +1,6 @@
 # slocjs
 
-SLOC: 56
+SLOC: 73
 
 ## Quickstart:
 
@@ -8,17 +8,13 @@ SLOC: 56
 npm install slocjs
 ```
 
-Make a file like `lines.js`
+import and use like:
 ```
-const slocjs = require('slocjs')
+import { countLinesInDir } from "slocjs";
+const lines = countLinesInDir("./src");
+console.log(lines);
 
-const lines = slocjs.countLinesInDir('./src')
-console.log(lines)
-```
-
-```
-guy@guy-MacBook-Pro repo % node lines.js
-SLOC: 3415
+// SLOC: 3415
 ```
 
 ## Npmjs
