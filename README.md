@@ -1,6 +1,6 @@
 # slocjs
 
-SLOC: 73
+SLOC: 83
 
 ## Quickstart:
 
