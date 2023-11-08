@@ -8,5 +8,6 @@
     "outDir": "./lib/esm",
     "declaration": true,
   },
-  "include": ["./src"]
+  "include": ["./src"],
+  "exclude": ["./src/**/*.spec.ts", "./src/example/**"]
 }
