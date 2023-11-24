@@ -29,6 +29,14 @@ const lines = slocjs.countLinesInDir("./src");
 console.log(lines);
 ```
 
+## Tests
+
+Run tests in watch mode:
+
+```bash
+npm run test:watch
+```
+
 ## Npmjs
 
 https://www.npmjs.com/package/slocjs
