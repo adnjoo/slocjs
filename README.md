@@ -40,3 +40,9 @@ npm run test:watch
 ## Npmjs
 
 https://www.npmjs.com/package/slocjs
+
+Publish to npmjs:
+
+```bash
+npm publish
+```
