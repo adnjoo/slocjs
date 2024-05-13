@@ -3,4 +3,4 @@
  * @param dirPath
  * @returns string
  */
-export declare function countLinesInDir(dirPath: string): string;
+export declare function countLinesInDir(dirPath: string, exclude?: string[]): string;

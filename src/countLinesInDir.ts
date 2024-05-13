@@ -14,8 +14,8 @@ import { countLinesOfCode } from "./countLinesOfCode";
  * @param dirPath
  * @returns string
  */
-export function countLinesInDir(dirPath: string): string {
+export function countLinesInDir(dirPath: string, exclude?: string[]): string {
   const extensionsToCount = [EXTENSIONS.JS, EXTENSIONS.TS, EXTENSIONS.TSX]; // TODO: https://github.com/adnjoo/slocjs/issues/5
-  const linesOfCode = countLinesOfCode(dirPath, extensionsToCount);
+  const linesOfCode = countLinesOfCode(dirPath, extensionsToCount, exclude);
   return `SLOC: ${linesOfCode}`;
 };
